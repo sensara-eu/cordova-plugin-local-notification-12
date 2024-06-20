@@ -279,10 +279,21 @@ public final class Options {
         CharSequence channelName = options.optString("channelName", null);
         String channelId = options.optString("channelId", null);
 
-        channelId = Manager.getInstance(context).buildChannelWithOptions(soundUri, shouldVibrate, hasSound, channelName,
-                channelId);
+        if (!options.optString("channel").isEmpty()) {
+            String channel = options.optString("channel", DEFAULT_CHANNEL_ID);
+            
+            Manager.getInstance(context).createChannel(
+                channel, 
+                channelName != null ? channelName : "default-channel-name",
+                4, 
+                shouldVibrate, 
+                soundUri
+            );
 
-        return channelId;
+            return channel;
+        }
+
+        return Manager.getInstance(context).buildChannelWithOptions(soundUri, shouldVibrate, hasSound, channelName);
     }
 
     /**

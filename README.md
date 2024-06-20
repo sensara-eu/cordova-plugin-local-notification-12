@@ -1,22 +1,10 @@
 
-<p align="left"><b><a href="https://github.com/katzer/cordova-plugin-local-notifications/tree/example-x">SAMPLE APP</a> :point_right:</b></p>
+<p align="left"><b><a href="https://github.com/sensara-eu/cordova-plugin-local-notifications/tree/example-x">SAMPLE APP</a> :point_right:</b></p>
 
 <br>
 
 <p align="center">
     <img src="images/logo.png">
-</p>
-
-<p align="center">
-    <a href="https://www.npmjs.com/package/cordova-plugin-local-notification-12">
-        <img src="https://badge.fury.io/js/cordova-plugin-local-notification-12.svg" alt="npm version" />
-    </a>
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L3HKQCD9UA35A "Donate once-off to this project using Paypal"">
-        <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPayl donate button" />
-    </a>
-    <a href="https://opensource.org/licenses/Apache-2.0">
-        <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License" />
-    </a>
 </p>
 
 <br>
@@ -69,10 +57,10 @@ __Known issues__
 Please report bugs or missing features!
 
 ## Install
-```bash
-npm i cordova-plugin-local-notification-12
-cordova plugin add cordova-plugin-local-notification-12
-```
+The plugin can be installed via [Cordova-CLI][CLI]
+
+install the latest head version:
+    $ cordova plugin add https://github.com/sensara-eu/cordova-plugin-local-notifications.git
 
 ## Basics
 
